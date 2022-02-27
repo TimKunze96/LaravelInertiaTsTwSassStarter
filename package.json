@@ -6,13 +6,27 @@
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
-        "prod": "npm run production",
+        "prod": "mix --production && mix --production --mix-config=webpack.ssr.mix.js",
         "production": "mix --production"
     },
     "devDependencies": {
+        "@babel/preset-react": "^7.16.7",
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "@inertiajs/inertia": "^0.11.0",
+        "@inertiajs/inertia-react": "^0.8.0",
+        "@inertiajs/progress": "^0.2.7",
+        "@inertiajs/server": "^0.1.0",
+        "@types/react": "^17.0.39",
+        "@types/react-dom": "^17.0.11",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "webpack-node-externals": "^3.0.0"
     }
 }
