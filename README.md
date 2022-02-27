@@ -47,3 +47,5 @@ After enabling SSR via the .env-file start the node-server by executing
 ```
 node public/js/ssr.js
 ```
+
+For more information about Inertia's SSR see the official [documentation](https://inertiajs.com/server-side-rendering)
